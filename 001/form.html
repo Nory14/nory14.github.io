@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="azriz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="/gambar/tengkorak.jpg">
+   <title>input-text</title>
+</head>
+<body>
+    <!--bagian input text dan label-->
+    <!--label dipakai untuk memberi nama pada input yang diinginkan, agar ketika menekan name input akan otomatis di arahkah ke tabel input teks, dengan memakai id di tag input terpakai-->
+
+    <!--tag value pada input form untuk memberi nilai awal-->
+
+ <form name="registrasi" method="post" enctype="multipart/form-data">
+ <label for="nama">Nama :</label><br>
+ <input type="text" name="Nama" id="nama" value="Tn/Ny." > <br>
+ <label for="tempat">Tempat Lahir :</label> <br>
+ <input type="text" name="tempat" id="tempat"> <br>
+
+ <!-- input date-->
+ <label for="tanggal">Tanggal Lahir</label><br>
+ <input type="date" name="tanggal" id="tanggal" value="2025-12-25" min="2000-01-01" max="2030-12-31" required><br>
+ <!-- input date-->
+
+<!--input email-->
+   <label for="email"> Email:</label> <br>
+    <input type="email" name="Email" id="Email" required> <br>
+<!--input email-->
+<!--input teepon-->
+    <label for="telepon">Telepon </label>: <br>
+    <input type="text" name="telepon" id="telepon" value="+62"> <br> 
+<!--input teepon-->
+<!--input teepon, digunakan untuk format telepon, mengubah format karena tiap negara berbeda kode telponnya-->
+<!--bagian input text dan label-->
+
+<!--Input Checkbox-->
+<!--checkbox untuk membuat box cheklist-->
+Hobby : <br>
+<input type="checkbox" name="Hobby" id="Gaming" value="Gaming">
+<label for="Gaming">Gaming</label>
+<br>
+<input type="checkbox" name="Hobby" id="Memancing" value="Memancing">
+<label for="Memancing">Memancing</label>
+<br>
+<input type="checkbox" name="Hobby" id="Membaca">
+<label for="Membaca">Membaca</label>
+<!--Input Checkbox-->
+
+<!--input radio-->
+<!--sama seperti checkbox, bedanya ia hanya bisa memilih satu box dari beberapa pilihan-->
+<!--input radio-->
+<br>
+<!--select tag-->
+<label for="hobies">Hobby</label><br>
+<select name="hobies" id="hobies">
+    <option value="Gaming" selected>Gaming</option>
+    <option value="Memancing">Memancing</option>
+    <option value="Membaca">Membaca</option> <br>
+</select>
+<br>
+<br>
+<!--select tag, untuk cekbox tapi lebih simpel hanya memakai satu baris dengan beberapa pilihan list-->
+<!--select tag-->
+
+
+
+<!--input url-->
+Media Sosial : <br>
+<label for="ig">Instagram</label><br>
+<input type="text" name="ig" id="ig"><br>
+<label for="url-ig">Link :</label><br>
+<input type="url" name="url-ig" id="url-ig"><br>
+
+<label for="fb">Facebook</label><br>
+<input type="text" name="fb" id="fb"><br>
+<label for="url-fb">Link :</label><br>
+<input type="url" name="url-fb" id="url-fb">
+<br>
+<br>
+<!--input url-->
+
+<!--input color-->
+<label for="Favorit"> Warna Kesukaan :</label> 
+<input type="color" name="Favorit" id="Favorit" value="#ff0000">
+<!--input color-->
+<br> 
+<br>
+<!--input file-->
+<!-- dipakai untuk mengoplod file, method harus post, dan juga encytype multipart/form-data-->
+<label for="profile"> Pas Foto :</label> 
+<input type="file" name="profile" id="profile">
+<!--input file-->
+
+<!--input number-->
+<!-- digunakan untuk memasukan nilai angka, jika tidak dalam format angka maka html akan membacanya tidak valid, bisa ditambahkan atribut max dan min-->
+<!--input number-->
+<br>
+<br>
+<!--input area tag-->
+<label for="deskripsi">Tentang Saya</label> <br>
+<textarea name="deskripsi" id="deskripsi" cols="50" rows="10"></textarea>
+<!--input area tag-->
+<br> <br>
+<!--input reset-->
+<!--berfungsi untuk mereset kmbali ke nilai awal-->
+<input type="reset" value="Reset">
+<!--input reset-->
+
+    <!--input submit-->
+    <!--input submit dipakai untuk mengirim semua hasil form ke tag action pada form-->
+    <input type="submit" value="Registrasi">
+     <!--input submit-->
+
+
+     <!--input image-->
+     <!-- input image bukan untuk menginput file format image,tapi membuat tombol submit berupa gambar-->
+ </form>
+
+ 
+   
+
+</body>
+</html
