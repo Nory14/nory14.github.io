@@ -79,6 +79,7 @@ nav li a:hover {
 }
 /*bar navigasi*/
 
+
 /*artikel*/
 article {padding: 20px;
     width: auto;
@@ -91,7 +92,7 @@ p{letter-spacing: 1px;}
 
 footer{
     background-color: #20c5b0;
-    text-align: center;
+    text-align: center; 
     color: rgb(168, 19, 19);
     font-size: 0.9em;
 }
