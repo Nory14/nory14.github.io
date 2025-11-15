@@ -1,7 +1,10 @@
 /* ====================================
    1. BASE & TYPOGRAPHY
    ==================================== */
-body {
+html{
+    scroll-behavior: smooth;
+}
+   body {
     background-color: #F7F7F7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #333;
