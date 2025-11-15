@@ -13,7 +13,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #333; /* Warna teks gelap */
     line-height: 1.6; /* Jarak antar baris agar mudah dibaca */
-    padding: 0; /* Hapus padding body, gunakan pada elemen main */
+    padding: 0; /* Hapus padding body, gunakan pada elemen main */}
 
     main {
     max-width: 1000px;
@@ -84,13 +84,15 @@ article {padding: 20px;
     width: auto;
     background-color:#20a594
     ; text-align: justify; }
-p{letter-spacing: 1px;
+p{letter-spacing: 1px;}
 
 /*artikel*/
+/* footer */
 
-/* footer*/
-footer{background-color:#20c5b0;
-    padding: 10px;
+.ftr{
+    background-color: #20c5b0;
+   
     text-align: center;
-    color: blue;}
- /* footer*/
+    color: rgb(168, 19, 19);
+    font-size: 0.9em;
+}
