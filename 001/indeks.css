@@ -83,6 +83,7 @@ main {
     display: flex; 
     justify-content: center;
     align-items: flex-start; 
+    min-height: 100vh;
 }
 
 .sidebar-iframe {
@@ -93,7 +94,8 @@ main {
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
     position: sticky;
-    top: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-content-area {
