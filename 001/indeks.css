@@ -2,12 +2,10 @@
    1. BASE & TYPOGRAPHY
    ==================================== */
 body {
-    
-    background-color: #f4f4f4; 
-  
+    background-color: #F7F7F7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #333;
-    line-height: 1.6; 
+    line-height: 1.6;
     padding: 0; 
 }
 
@@ -25,18 +23,8 @@ p {
 }
 
 /* ====================================
-   2. LAYOUT & HEADER/NAVIGASI
+   2. HEADER & NAVIGASI
    ==================================== */
-
-/* Kontainer utama agar konten tidak terlalu lebar di layar besar */
-main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 header {
     background-color: #20c5b0;
     padding: 20px 0; 
@@ -50,7 +38,6 @@ header h1 {
     color: white; 
 }
 
-/* Navigasi */
 nav {
     background-color: #4ed8c7;
 }
@@ -59,28 +46,66 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden; /* Clearfix */
-    display: flex; /* Menggantikan float untuk layout modern */
+    overflow: hidden; 
+    display: flex; 
     justify-content: flex-start;
 }
 
 nav li a {
     display: block;
     text-align: center;
-    padding: 12px 16px; /* Padding sedikit dikurangi */
+    padding: 12px 16px; 
     text-decoration: none;
     color: #333;
-    transition: background-color 0.3s; /* Efek transisi halus */
+    transition: background-color 0.3s; 
 }
 
-/* Targetkan link yang di-hover */
 nav li a:hover {
     background-color: #72ece2; 
     color: #0d6d5f;
 }
 
 /* ====================================
-   3. KOMPONEN KONTEN (Gambar, Tabel, dll)
+   3. FLEXBOX LAYOUT (Sidebar & Konten)
+   ==================================== */
+
+main {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.content-wrapper {
+    max-width: 1300px; 
+    margin: 20px auto;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.sidebar-iframe {
+    width: 300px; 
+    min-height: 800px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+}
+
+.main-content-area {
+    flex-grow: 1; 
+    max-width: 1000px; 
+    background-color: white; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================================
+   4. KOMPONEN KONTEN & FOOTER
    ==================================== */
 
 .subbab {
@@ -92,12 +117,10 @@ nav li a:hover {
 .center-img {
     display: block;
     margin: 20px auto; 
-   
     max-width: 90%; 
     height: auto;
 }
 
-/* Contoh penyesuaian untuk gambar kode agar tidak terlalu besar */
 img[src*="codingan/"] {
     max-width: 70%;
 }
@@ -111,7 +134,6 @@ img[src*="codingan/"] {
     font-family: monospace;
 }
 
-/* Styling untuk Video dan Audio */
 .video-container {
     text-align: center;
     margin: 20px 0;
@@ -121,17 +143,16 @@ img[src*="codingan/"] {
     height: auto;
 }
 
-
 .styled-table {
     width: 100%;
-    border: 2px solid black;
+    border-collapse: collapse; /* Mengganti border: 2px solid black; */
     margin: 20px 0;
     font-size: 0.9em;
     min-width: 400px;
 }
 
 .styled-table th, .styled-table td {
-    border: 2px solid black;
+    border: 3px solid black; 
     padding: 12px 15px;
     text-align: left;
 }
@@ -139,7 +160,17 @@ img[src*="codingan/"] {
 .styled-table thead th {
     background-color: #0d6d5f;
     color: #ffffff;
-    border-color: #0d6d5f;}
+    border-color: black;
+}
 
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
 
-
+footer {
+    background-color: #20c5b0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+}
