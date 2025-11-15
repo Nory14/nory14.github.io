@@ -24,7 +24,7 @@ body{
     
 }
 
-.button-link{
+.button-link , a{
     text-decoration: none;
     color: black;
     font-weight: 400;
@@ -82,7 +82,7 @@ nav li a {
 }
 
 /* Targetkan link yang di-hover */
-nav li a:hover {
+nav li a {
     background-color: #72ece2; /* Warna hover yang lebih terang */
     color: #0d6d5f;
 }
@@ -104,4 +104,9 @@ footer{
     text-align: center; 
     color: rgb(168, 19, 19);
     font-size: 0.9em;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    
 }
